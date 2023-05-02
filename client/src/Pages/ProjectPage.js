@@ -10,7 +10,7 @@ import { PROJECTS_QUERY } from "../utils/queries";
 import {ProjectForm} from "../components/Projects";
 import ProjectList from "../components/Projects/ProjectList";
 
-export default function ProjectPage () {
+const ProjectPage = () =>  {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showForm, setShowForm] = useState(false);
   const { loading, error, data } = useQuery(PROJECTS_QUERY);
@@ -59,6 +59,6 @@ export default function ProjectPage () {
       </Row>
     </Container>
   );
-
-  
 };
+
+export default ProjectPage;
