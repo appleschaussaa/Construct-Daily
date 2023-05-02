@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { HomePage, ProjectPage, DailyLogPage } from "./pages/index";
+import { HomePage } from "./pages/HomePage";
+import { ProjectPage } from "./pages/ProjectPage";
+import { DailyLogPage } from "./pages/DailyLogPage";
 import { UserProfile, LoginForm, RegisterForm } from "./components/Users";
 import { MyNav, Footer } from "./components/Navigation/index";
 import {
